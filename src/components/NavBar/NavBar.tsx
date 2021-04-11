@@ -3,9 +3,10 @@ import { Nav, NavLinks } from './NavBar.style';
 
 const NavBar: React.FC = (): JSX.Element => {
   const navBarElements = [
-    { name: 'Główna', linkTo: 'car1' },
-    { name: 'Blacharstwo', linkTo: 'car2' },
-    { name: 'Lakiernictwo', linkTo: 'car3' },
+    { name: 'Główna', linkTo: 'main' },
+    { name: 'O nas', linkTo: 'aboutUs' },
+    { name: 'Blacharstwo', linkTo: 'tinsmithing' },
+    { name: 'Lakiernictwo', linkTo: 'varnishing' },
   ];
 
   return (

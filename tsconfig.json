@@ -25,17 +25,10 @@
     "src"
   ],
   "paths": {
-    "components/*": [
-      "src/components/*"
-    ],
-    "views/*": [
-      "src/views/*"
-    ],
-    "assets/*": [
-      "src/assets/*"
-    ],
-    "icons": [
-      "src/icons/*"
-    ]
+    "components/*": ["src/components/*"],
+    "views/*": [ "src/views/*"],
+    "assets/*": [ "src/assets/*"],
+    "icons/*": ["src/icons/*"],
+    "utils":  ["src/utils/*"],
   }
 }
