@@ -10,7 +10,7 @@ import { BlackFixedCar } from './TinsmithingPage.style';
 
 const TinsmithingPage = () => (
   <BlackFixedCar id='tinsmithing'>
-    <Wrapper>
+    <Wrapper data-aos='zoom-in'>
       <Box>
         <TitleText>Blacharstwo</TitleText>
       </Box>

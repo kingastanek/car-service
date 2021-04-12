@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { ScrollButton } from 'components';
 import {
   Box,
@@ -9,9 +11,15 @@ import {
 import { BlackBrokenCarImg } from './MainPage.style';
 
 const MainPage = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
+
   return (
     <BlackBrokenCarImg id='main'>
-      <Wrapper>
+      <Wrapper data-aos='zoom-in'>
         <Box>
           <TitleText>Michał</TitleText>
           <TitleText fontSize='4rem'>Piórowski</TitleText>

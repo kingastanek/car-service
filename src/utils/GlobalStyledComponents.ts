@@ -41,7 +41,7 @@ export const TitleText = styled.p<tTitleText>`
 
 export const Wrapper = styled.div`
   position: absolute;
-  top: 200px;
+  top: 180px;
   right: 100px;
   max-width: 50%;
   min-width: 50%;
@@ -54,4 +54,5 @@ export const Paragraph = styled.p`
   text-align: center;
   font-size: 24px;
   line-height: 35px;
+  font-weight: 700;
 `;

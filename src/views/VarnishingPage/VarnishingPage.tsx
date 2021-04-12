@@ -10,9 +10,9 @@ import { RedFixedCar } from './VarnishingPage.style';
 
 const VarnishingPage = () => (
   <RedFixedCar id='varnishing'>
-    <Wrapper>
+    <Wrapper data-aos='zoom-in'>
       <Box>
-        <TitleText>Lakietnictwo</TitleText>
+        <TitleText>Lakiernictwo</TitleText>
       </Box>
       <Paragraph>
         Lakierowanie odbywa się w specjalnej komorze lakierniczej, a stosowane

@@ -10,15 +10,15 @@ import { BlackBrokenCar } from './AboutMePage.style';
 
 const AboutMePage = () => (
   <BlackBrokenCar id='aboutUs'>
-    <Wrapper>
+    <Wrapper data-aos='zoom-in'>
       <Box>
         <TitleText>O nas</TitleText>
       </Box>
       <Paragraph>
         Wieloletnie doświadczenie oraz pasja do motoryrazji! Oddając samochód do
         naszego warsztatu możesz być pewien, że naprawimy go szybko i fachowo.
-        Profesjonalizm oraz zadowolenie klienta to nasz wartośc priorytetowa.
-        Naszym atutem jest również jest fakt, że współpracując z towarzystwami
+        Profesjonalizm oraz zadowolenie klienta to nasz wartość priorytetowa.
+        Naszym atutem jest również fakt, że współpracując z towarzystwami
         ubezpieczeniowymi oferujemy likwidacje szkód komunikacyjnych jako
         naprawy bezgotówkowe.
       </Paragraph>
