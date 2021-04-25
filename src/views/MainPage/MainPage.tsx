@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { ScrollButton, ContactInfo } from 'components';
+import { ContactInfo } from 'components';
 import { useWindowDimensions } from 'hooks';
 import { Wrapper, TitleText, Box } from 'utils/GlobalStyledComponents';
 import { BlackBrokenCarImg, BlackBrokenCarImgDesktop } from './MainPage.style';
@@ -34,7 +34,6 @@ const MainPage = () => {
   ) : (
     <BlackBrokenCarImgDesktop id='main'>
       {renderContent()}
-      <ScrollButton to='aboutUs' arrowDirection='down' />
     </BlackBrokenCarImgDesktop>
   );
 };

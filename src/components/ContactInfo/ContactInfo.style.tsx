@@ -44,3 +44,32 @@ export const Title = styled(ContactText)`
     margin: 1rem;
   }
 `;
+
+export const Email = styled.a`
+  text-decoration: none;
+  color: white;
+`;
+
+export const Address = styled.a`
+  text-decoration: none;
+  color: white;
+`;
+
+export const FacebookLink = styled.a`
+  text-decoration: none;
+  color: white;
+`;
+
+export const TelephoneLink = styled.a`
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Arial';
+  margin: 0.25rem;
+  margin-left: 1rem;
+
+  @media screen and (max-width: 1099px) {
+    font-size: 0.75rem;
+  }
+`;

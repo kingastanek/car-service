@@ -1,5 +1,4 @@
 import React from 'react';
-import { ScrollButton } from 'components';
 import { useWindowDimensions } from 'hooks';
 import {
   Box,
@@ -28,10 +27,7 @@ const VarnishingPage = () => {
   return isMobile ? (
     <RedFixedCar id='varnishing'>{renderContent()}</RedFixedCar>
   ) : (
-    <RedFixedCarDesktop id='varnishing'>
-      {renderContent()}
-      <ScrollButton to='main' arrowDirection='up' />
-    </RedFixedCarDesktop>
+    <RedFixedCarDesktop id='varnishing'>{renderContent()}</RedFixedCarDesktop>
   );
 };
 

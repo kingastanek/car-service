@@ -1,6 +1,5 @@
 import React from 'react';
 import { useWindowDimensions } from 'hooks';
-import { ScrollButton } from 'components';
 import {
   Box,
   TitleText,
@@ -33,7 +32,6 @@ const AboutMePage = () => {
   ) : (
     <BlackBrokenCarDesktop id='aboutUs'>
       {renderContent()}
-      <ScrollButton to='tinsmithing' arrowDirection='down' />
     </BlackBrokenCarDesktop>
   );
 };
