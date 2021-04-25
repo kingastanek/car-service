@@ -1,71 +1,40 @@
-import React from 'react';
-import { NavBar } from 'components';
-import icons from 'icons/icons';
-import {
-  CarImage1,
-  CarImage2,
-  CarImage3,
-  MainText,
-  Scroll,
-  IconButtonWrapper,
-} from './MainPage.style';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { ContactInfo } from 'components';
+import { useWindowDimensions } from 'hooks';
+import { Wrapper, TitleText, Box } from 'utils/GlobalStyledComponents';
+import { BlackBrokenCarImg, BlackBrokenCarImgDesktop } from './MainPage.style';
 
 const MainPage = () => {
-  const ArrowUpIcon = icons['arrowUp'];
-  const ArrorDownIcon = icons['arrowDown'];
-  return (
-    <>
-      <NavBar />
-      <CarImage1 id='car1'>
-        <MainText>
-          Naprawa szkód powypadkowych <br />
-          Michał Piórowski
-          <br />
-          ul. Zaborska 50, Oświęcim
-          <br />
-          <p style={{ fontSize: '15px', marginBottom: 0 }}>
-            Kliknij lub zescrolluj zeby naprawić swój samochód
-          </p>
-          <Scroll to='car2' spy smooth>
-            <IconButtonWrapper>
-              <ArrorDownIcon />
-            </IconButtonWrapper>
-          </Scroll>
-        </MainText>
-      </CarImage1>
-      <CarImage2 id='car2'>
-        <MainText>
-          Blacharstwo
-          <p style={{ fontSize: '18px', width: '400px' }}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit
-            accusamus adipisci alias velit quas aliquam?
-          </p>
-          <p style={{ fontSize: '15px', margin: 0 }}>
-            Kliknij lub zescrolluj zeby przemalować swój samochód
-          </p>
-          <Scroll to='car3' spy smooth>
-            <IconButtonWrapper>
-              <ArrorDownIcon />
-            </IconButtonWrapper>
-          </Scroll>
-        </MainText>
-      </CarImage2>
-      <CarImage3 id='car3'>
-        <MainText>
-          Lakiernictwo
-          <p style={{ fontSize: '18px', width: '400px' }}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit
-            accusamus adipisci alias velit quas aliquam? Dolor unde.
-          </p>
-          <p style={{ fontSize: '15px', margin: 0 }}>Wróć na górę</p>
-          <Scroll to='car1' spy smooth>
-            <IconButtonWrapper>
-              <ArrowUpIcon />
-            </IconButtonWrapper>
-          </Scroll>
-        </MainText>
-      </CarImage3>
-    </>
+  const { width } = useWindowDimensions();
+  const isMobile = width < 1024;
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
+
+  const renderContent = () => (
+    <Wrapper data-aos='zoom-in' style={{ top: isMobile ? '1rem' : '5rem' }}>
+      <Box>
+        <TitleText fontSize={isMobile ? '1.5rem' : '2rem'}>Michał</TitleText>
+        <TitleText fontSize={isMobile ? '2rem' : '3rem'}>Piórowski</TitleText>
+        <TitleText fontSize={isMobile ? '1.5rem' : '2rem'}>
+          Auto serwis
+        </TitleText>
+      </Box>
+      <ContactInfo />
+    </Wrapper>
+  );
+
+  return isMobile ? (
+    <BlackBrokenCarImg id='main'>{renderContent()}</BlackBrokenCarImg>
+  ) : (
+    <BlackBrokenCarImgDesktop id='main'>
+      {renderContent()}
+    </BlackBrokenCarImgDesktop>
   );
 };
 

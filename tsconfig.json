@@ -19,7 +19,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react-jsx"
   },
   "include": [
     "src"
@@ -34,8 +34,14 @@
     "assets/*": [
       "src/assets/*"
     ],
-    "icons": [
+    "icons/*": [
       "src/icons/*"
+    ],
+    "utils": [
+      "src/utils/*"
+    ],
+    "hooks": [
+      "src/hooks/*"
     ]
   }
 }

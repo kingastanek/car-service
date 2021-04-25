@@ -1,8 +1,17 @@
 import React from 'react';
-import MainPage from 'views/MainPage/MainPage';
+import { NavBar } from 'components';
+import { MainPage, AboutMePage, TinsmithingPage, VarnishingPage } from 'views';
 
 function App() {
-  return <MainPage />;
+  return (
+    <>
+      <NavBar />
+      <MainPage />
+      <AboutMePage />
+      <TinsmithingPage />
+      <VarnishingPage />
+    </>
+  );
 }
 
 export default App;
