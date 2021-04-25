@@ -1,9 +1,13 @@
-import styled from 'styled-components';
+import React from 'react';
+import styled, {css} from 'styled-components';
 
 type tTitleText = {
   fontSize?: string;
 };
 
+type tBox = {
+  mobileStyle?: React.CSSProperties;
+};
 
 export const Car = styled.div`
   position: relative;
@@ -11,48 +15,85 @@ export const Car = styled.div`
   background-attachment: fixed;
   width: 100vw;
   height: 100vh;
-  font-size: 50px;
   color: white;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 `;
 
-export const Box = styled.div`
-  padding: 20px;
-  width: 400px;
-  height: auto;
-  border: 3px solid white;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+export const Box = styled.div<tBox>`
+  padding: 1.5rem;
+  border: 2px solid white;
+  border-radius: 8px;
+  width: fit-content;
+  margin-bottom: 1rem;
+
+  @media screen and (max-width: 1099px) {
+    margin: 1rem 0 0.5rem 0;
+    padding: 1rem;
+
+    ${({ style }) =>
+    style &&
+    css`
+     ...style
+  `};
+  }
 `;
 
 export const TitleText = styled.p<tTitleText>`
-  font-size: ${({ fontSize }) => fontSize || '3rem'};
+  font-size: ${({ fontSize }) => fontSize || '4rem'};
   font-weight: bold;
   margin: 0;
   padding: 0;
   text-align: center;
-  line-height: 60px;
+  line-height: 3rem;
+
+  @media screen and (max-width: 1099px) {
+    line-height: 1.5rem;
+    font-size: ${({ fontSize }) => fontSize || '2.5rem'};
+  }
 `;
 
 export const Wrapper = styled.div`
   position: absolute;
-  top: 180px;
+  top: 8rem;
   right: 100px;
   max-width: 50%;
   min-width: 50%;
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  ${({ style }) =>
+    style &&
+    css`
+     ...style
+  `};
+
+  @media screen and (max-width: 1099px) {
+    position: static;
+    width: 100%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 export const Paragraph = styled.p`
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-family: 'Arial';
+  padding: 0;
+  line-height: 25px;
   text-align: center;
-  font-size: 24px;
-  line-height: 35px;
-  font-weight: 700;
+  margin: 1rem 2rem;;
+
+  ${({ style }) =>
+    style &&
+    css`
+     ...style
+  `};
+
+  @media screen and (max-width: 1099px) {
+    line-height: 25px;
+    font-size: 1rem;
+  }
 `;

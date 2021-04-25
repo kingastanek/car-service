@@ -1,17 +1,21 @@
 import React from 'react';
 import { ScrollButton } from 'components';
+import { useWindowDimensions } from 'hooks';
 import {
   Box,
   TitleText,
   Wrapper,
   Paragraph,
 } from 'utils/GlobalStyledComponents';
-import { RedFixedCar } from './VarnishingPage.style';
+import { RedFixedCarDesktop, RedFixedCar } from './VarnishingPage.style';
 
-const VarnishingPage = () => (
-  <RedFixedCar id='varnishing'>
+const VarnishingPage = () => {
+  const { width } = useWindowDimensions();
+  const isMobile = width < 1024;
+
+  const renderContent = () => (
     <Wrapper data-aos='zoom-in'>
-      <Box>
+      <Box style={{ marginTop: isMobile ? '4rem' : '0' }}>
         <TitleText>Lakiernictwo</TitleText>
       </Box>
       <Paragraph>
@@ -19,8 +23,16 @@ const VarnishingPage = () => (
         przez nas materiały i lakiery są najwyższej jakości.
       </Paragraph>
     </Wrapper>
-    <ScrollButton to='main' arrowDirection='up' />
-  </RedFixedCar>
-);
+  );
+
+  return isMobile ? (
+    <RedFixedCar id='varnishing'>{renderContent()}</RedFixedCar>
+  ) : (
+    <RedFixedCarDesktop id='varnishing'>
+      {renderContent()}
+      <ScrollButton to='main' arrowDirection='up' />
+    </RedFixedCarDesktop>
+  );
+};
 
 export default VarnishingPage;

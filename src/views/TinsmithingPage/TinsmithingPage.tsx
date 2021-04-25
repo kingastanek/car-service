@@ -1,17 +1,21 @@
 import React from 'react';
 import { ScrollButton } from 'components';
+import { useWindowDimensions } from 'hooks';
 import {
   Box,
   TitleText,
   Wrapper,
   Paragraph,
 } from 'utils/GlobalStyledComponents';
-import { BlackFixedCar } from './TinsmithingPage.style';
+import { BlackFixedCarDesktop, BlackFixedCar } from './TinsmithingPage.style';
 
-const TinsmithingPage = () => (
-  <BlackFixedCar id='tinsmithing'>
+const TinsmithingPage = () => {
+  const { width } = useWindowDimensions();
+  const isMobile = width < 1024;
+
+  const renderContent = () => (
     <Wrapper data-aos='zoom-in'>
-      <Box>
+      <Box style={{ marginTop: isMobile ? '4rem' : '0' }}>
         <TitleText>Blacharstwo</TitleText>
       </Box>
       <Paragraph>
@@ -19,8 +23,15 @@ const TinsmithingPage = () => (
         narzędzia, dzięki czemu wykonujemy kompleksowe naprawy blacharskie.
       </Paragraph>
     </Wrapper>
-    <ScrollButton to='varnishing' arrowDirection='down' />
-  </BlackFixedCar>
-);
+  );
 
+  return isMobile ? (
+    <BlackFixedCar id='tinsmithing'>{renderContent()}</BlackFixedCar>
+  ) : (
+    <BlackFixedCarDesktop id='tinsmithing'>
+      {renderContent()}
+      <ScrollButton to='varnishing' arrowDirection='down' />
+    </BlackFixedCarDesktop>
+  );
+};
 export default TinsmithingPage;

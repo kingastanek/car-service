@@ -1,5 +1,5 @@
 import React from 'react';
-import icons from 'icons/icons';
+import { Icon } from 'components';
 import { Scroll, IconButtonWrapper } from './ScrollButton.style';
 
 type tScrollButton = {
@@ -10,16 +10,16 @@ type tScrollButton = {
 const ScrollButton: React.FC<tScrollButton> = ({
   to,
   arrowDirection,
-}): JSX.Element => {
-  const ArrowUpIcon = icons['arrowUp'];
-  const ArrorDownIcon = icons['arrowDown'];
-  return (
-    <Scroll to={to} spy smooth>
-      <IconButtonWrapper>
-        {arrowDirection === 'down' ? <ArrorDownIcon /> : <ArrowUpIcon />}
-      </IconButtonWrapper>
-    </Scroll>
-  );
-};
+}): JSX.Element => (
+  <Scroll to={to} spy smooth>
+    <IconButtonWrapper>
+      {arrowDirection === 'down' ? (
+        <Icon icon='arrowDown' />
+      ) : (
+        <Icon icon='arrowUp' />
+      )}
+    </IconButtonWrapper>
+  </Scroll>
+);
 
 export default ScrollButton;
