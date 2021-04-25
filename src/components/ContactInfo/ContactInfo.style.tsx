@@ -18,7 +18,7 @@ export const ContactText = styled.p`
   margin: 0.25rem;
   margin-left: 1rem;
 
-  @media screen and (max-width: 1099px) {
+  @media (max-width: 1099px) {
     font-size: 0.75rem;
   }
 `;
@@ -39,7 +39,7 @@ export const Title = styled(ContactText)`
   font-size: 1.5rem;
   margin-bottom: 1rem;
 
-  @media screen and (max-width: 1099px) {
+  @media (max-width: 1099px) {
     font-size: 1rem;
     margin: 1rem;
   }
@@ -69,7 +69,7 @@ export const TelephoneLink = styled.a`
   margin: 0.25rem;
   margin-left: 1rem;
 
-  @media screen and (max-width: 1099px) {
+  @media (max-width: 1099px) {
     font-size: 0.75rem;
   }
 `;

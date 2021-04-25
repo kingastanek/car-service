@@ -25,7 +25,7 @@ export const Box = styled.div<tBox>`
   width: fit-content;
   margin-bottom: 1rem;
 
-  @media screen and (max-width: 1099px) {
+  @media (max-width: 1099px) {
     margin: 1rem 0 0.5rem 0;
     padding: 1rem;
 
@@ -45,7 +45,7 @@ export const TitleText = styled.p<tTitleText>`
   text-align: center;
   line-height: 3rem;
 
-  @media screen and (max-width: 1099px) {
+  @media (max-width: 1099px) {
     line-height: 1.5rem;
     font-size: ${({ fontSize }) => fontSize || '2.5rem'};
   }
@@ -67,7 +67,7 @@ export const Wrapper = styled.div`
      ...style
   `};
 
-  @media screen and (max-width: 1099px) {
+  @media (max-width: 1099px) {
     position: static;
     width: 100%;
     min-width: 100%;
@@ -92,7 +92,7 @@ export const Paragraph = styled.p`
      ...style
   `};
 
-  @media screen and (max-width: 1099px) {
+  @media (max-width: 1099px) {
     line-height: 25px;
     font-size: 1rem;
   }
