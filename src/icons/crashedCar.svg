@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_2182" data-name="Group 2182" transform="translate(-1150 -400.73)">
+    <path id="Path_1313" data-name="Path 1313" d="M1.787,0H4.465c.341,0-.707.933-.868,1.787-.074.388.7.712.868.927s.7-1.337.7-.927A1.787,1.787,0,0,1,3.376,3.574H1.787A1.787,1.787,0,0,1,1.787,0Z" transform="translate(1150 407.182)" fill="#fff"/>
+    <path id="Subtraction_1" data-name="Subtraction 1" d="M19.459,10.325H3.177A3.181,3.181,0,0,1,0,7.148V3.177A3.181,3.181,0,0,1,3.177,0H19.459a3.18,3.18,0,0,1,3.177,3.177V7.148A3.181,3.181,0,0,1,19.459,10.325ZM17.836,4.06a3.465,3.465,0,0,0-1.546.309,5.087,5.087,0,0,0-2,2.779h5.575V4.369A7.541,7.541,0,0,0,17.836,4.06ZM4.8,4.06a7.617,7.617,0,0,0-2.028.309V7.148H8.347a5.122,5.122,0,0,0-2-2.779A3.465,3.465,0,0,0,4.8,4.06Z" transform="translate(1151.589 408.77)" fill="#fff"/>
+    <path id="Rectangle_4" data-name="Rectangle 4" d="M0,0H3.166A3.166,3.166,0,0,1,6.332,3.166v.791A3.166,3.166,0,0,1,3.166,7.123h0A3.166,3.166,0,0,1,0,3.957V0A0,0,0,0,1,0,0Z" transform="translate(1151.588 415.832)" fill="#fff"/>
+    <path id="Rectangle_5" data-name="Rectangle 5" d="M2.77,0H5.54a0,0,0,0,1,0,0V4.353a2.77,2.77,0,0,1-2.77,2.77h0A2.77,2.77,0,0,1,0,4.353V2.77A2.77,2.77,0,0,1,2.77,0Z" transform="translate(1168.684 415.832)" fill="#fff"/>
+    <path id="Path_1311" data-name="Path 1311" d="M0,10.375,4.485.865,4.74.324,4.893,0h0" transform="translate(1152.383 401.373)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_10" data-name="Line 10" x1="3.971" y2="1.986" transform="translate(1164.892 402.615)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+    <path id="Path_1308" data-name="Path 1308" d="M-.471,0H6.9" transform="translate(1157.631 401.424)" fill="none" stroke="#fff" stroke-width="1"/>
+    <path id="Path_1312" data-name="Path 1312" d="M-.248-5.883" transform="translate(1164.753 407.353)" fill="none" stroke="#fff" stroke-width="2"/>
+    <line id="Line_11" data-name="Line 11" x2="1.588" y2="2.383" transform="translate(1164.495 401.424)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+    <path id="Path_1314" data-name="Path 1314" d="M2.435.618,0,0" transform="translate(1162.311 404.005)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+    <path id="Path_1315" data-name="Path 1315" d="M0,1.573,1.112,0" transform="translate(1163.78 404.616)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line_12" data-name="Line 12" x2="1.588" y2="2.383" transform="translate(1168.863 402.615)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line_13" data-name="Line 13" x1="5.957" y2="0.413" transform="translate(1166.878 404.998)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+    <path id="Path_1316" data-name="Path 1316" d="M.275,1.791,0,0" transform="translate(1166.878 405.411)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line_14" data-name="Line 14" x1="0.397" y2="4.765" transform="translate(1172.437 404.998)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line_15" data-name="Line 15" x1="3.203" y2="0.584" transform="translate(1168.562 414.061)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+    <path id="Path_1320" data-name="Path 1320" d="M0,0" transform="translate(1168.466 411.594)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    <line id="Line_19" data-name="Line 19" y1="2.374" transform="translate(1169.787 414.645)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line_20" data-name="Line 20" x1="0.791" y1="3.166" transform="translate(1167.808 412.946)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+    <path id="Path_1317" data-name="Path 1317" d="M3.376,0H1.566c-.341,0-.162.933,0,1.787.074.388-.7.712-.868.927S0,1.376,0,1.787A1.787,1.787,0,0,0,1.787,3.574H3.376A1.787,1.787,0,0,0,3.376,0Z" transform="translate(1171.047 407.182)" fill="#fff"/>
+  </g>
+</svg>
