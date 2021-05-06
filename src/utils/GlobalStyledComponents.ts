@@ -26,7 +26,8 @@ export const Box = styled.div<tBox>`
   margin-bottom: 1rem;
 
   @media (max-width: 1099px) {
-    margin: 1rem 0 0.5rem 0;
+    margin: 0;
+    margin-top: 1rem;
     padding: 1rem;
 
     ${({ style }) =>
@@ -93,7 +94,7 @@ export const Paragraph = styled.p`
   `};
 
   @media (max-width: 1099px) {
-    line-height: 25px;
-    font-size: 1rem;
+    line-height: 23px;
+    font-size: 0.875rem;
   }
 `;

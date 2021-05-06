@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 export const InfoWrapper = styled.div`
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
   align-items: center;
 `;
 
@@ -41,7 +41,7 @@ export const Title = styled(ContactText)`
 
   @media (max-width: 1099px) {
     font-size: 1rem;
-    margin: 1rem;
+    margin: 0.75rem;
   }
 `;
 

@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import car1 from '../../assets/images/black.png';
-import car2 from '../../assets/images/black-mobile.png';
+import blackCar from '../../assets/images/black-car.png';
+import blackCarMobie from '../../assets/images/black-car-mobile.png';
 import { Car } from 'utils/GlobalStyledComponents';
 
 export const BlackFixedCarDesktop = styled(Car)`
-  background-image: url(${car1});
+  background-image: url(${blackCar});
 `;
 
 export const BlackFixedCar = styled(Car)`
-  background-image: url(${car2});
+  background-image: url(${blackCarMobie});
 `;
