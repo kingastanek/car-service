@@ -1,11 +1,16 @@
+import React from 'react';
+import { NavBar } from 'components';
+import { MainPage, AboutMePage, TinsmithingPage, VarnishingPage } from 'views';
+
 function App() {
   return (
-    <div
-      dangerouslySetInnerHTML={{
-        __html:
-          "<iframe src='http://www.piorowski-auto-serwis.pl' allowfullscreen style='width: 100vw; height: 100vh; border: none;' />",
-      }}
-    />
+    <>
+      <NavBar />
+      <MainPage />
+      <AboutMePage />
+      <TinsmithingPage />
+      <VarnishingPage />
+    </>
   );
 }
 
