@@ -12,11 +12,11 @@ function App() {
           height: '100vh',
         }}
       > */}
-      <NavBar />
+      {/* <NavBar /> */}
       <MainPage />
-      <AboutMePage />
+      {/* <AboutMePage />
       <TinsmithingPage />
-      <VarnishingPage />
+      <VarnishingPage /> */}
       {/* </iframe> */}
     </>
   );
