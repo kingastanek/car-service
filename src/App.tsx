@@ -5,19 +5,19 @@ import { MainPage, AboutMePage, TinsmithingPage, VarnishingPage } from 'views';
 function App() {
   return (
     <>
-      <iframe
+      {/* <iframe
         src='http://piorowski-auto-serwis.pl/'
         style={{
           width: '100vw',
           height: '100vh',
         }}
-      >
-        <NavBar />
-        <MainPage />
-        <AboutMePage />
-        <TinsmithingPage />
-        <VarnishingPage />
-      </iframe>
+      > */}
+      <NavBar />
+      <MainPage />
+      <AboutMePage />
+      <TinsmithingPage />
+      <VarnishingPage />
+      {/* </iframe> */}
     </>
   );
 }
